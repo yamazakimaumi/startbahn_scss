@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* ====================================================
+common style
+==================================================== */
+@import 'reset';
+@import 'mixin';
+@import 'base';
+@import 'component';
+
+@import 'template/header.scss';
+@import 'template/footer.scss';
+@import 'template/notification.scss';

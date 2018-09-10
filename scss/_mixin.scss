@@ -1,0 +1,75 @@
+
+//カラー指定
+$bk: #282828;
+$gray: #EEEEEE;
+
+$brand: #4C2EE5;
+
+$border-color: #EEEEF0;
+$bt-radius: 6px;
+$box-radius: 5px;
+
+
+$text-gray: #A3A3A3;
+$text: #1A1A1A;
+$subtext: #A3A3A3;
+$icon: #D0D0D0;
+
+$bt-color: $brand;
+$bt-hover: #3C24B3;
+
+
+//レスポンシブ設定
+$sp_w: 680px;
+
+
+
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin trans{
+  transition: all 0.3s cubic-bezier(.09,.98,.83,1);
+}
+
+@mixin bt_hover_1 {
+	@include trans;
+	&:hover{
+		background-color: $bt-hover;
+		color: #fff;
+	}
+}
+
+
+@mixin bt_hover_2 {
+	@include trans;
+	a{
+		@include trans;
+	}
+	&:hover{
+		border: 1px solid $brand;
+		color: $brand;
+		a{
+			color: $brand;
+		}
+	}
+}
+
+@mixin bt_hover_current {
+	@include trans;
+	&:hover{
+		background-color: $bt-hover;
+		color: #fff;
+		a{
+			color: #fff;
+		}
+	}
+}

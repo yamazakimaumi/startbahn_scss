@@ -1,0 +1,54 @@
+//notifications
+.notifications{
+  &__select{
+    display: flex;
+  }
+
+  &__select__label{
+    font-size: 1.2em;
+    padding: 12px 20px;
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+    &.active{
+      color: $bk;
+      font-weight: bold;
+      border-bottom: 1px solid $brand;
+    }
+  }
+
+  &__num{
+    font-weight: normal;
+    font-size: 0.75em;
+    vertical-align: 1em;
+  }
+
+  &__content{
+    padding: 20px;
+
+  }
+
+  &__lead{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__date{
+    text-align: right;
+    margin-left: 20px;
+    min-width: 100px;
+  }
+
+  &__message{
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: $box-radius;
+    margin-bottom: 10px;
+  }
+}

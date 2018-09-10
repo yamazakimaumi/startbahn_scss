@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* ====================================================
+base style
+==================================================== */
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  line-height: 1.4;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+/*  font-family: sans-serif; */
+/*  font-family: arial, sans-serif; */
+/*  font-family: 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', Arial, Helvetica;  */
+/*  font-family: Verdana, Arial, Helvetica, sans-serif; */
+/*  font-family: Meiryo, Tahoma, Verdana, Arial, sans-serif; */
+/*  font-family: Arial, Verdana, 'Helvetica Neue', Helvetica, sans-serif; */
+/*  font-family: Osaka, Arial, Helvetica, sans-serif; */
+/*  font-family: 'MS PGothic', Osaka, Arial, sans-serif; */
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+a:active {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+
+/* イレギュラーな場合のみ使うCSS(※基本的には使用しないこと)
+-------------------------- */
+
+
+
+img{
+  display: block;
+  width: 100%;
+}
+
+input{
+  font-size: 14px;
+  @include placeholder($text-gray);
+}
+
+input[type=text]{
+  background-color: $gray;
+  display: block;
+  border-radius: $bt-radius;
+  width: 100%;
+  padding: 10px 12px;
+}
+
+
+.sp__content{
+  @media (min-width: $sp_w){
+    display: none !important;
+  }
+}
+
+.pc__content{
+  @media (max-width: $sp_w){
+    display: none !important;
+  }
+}
